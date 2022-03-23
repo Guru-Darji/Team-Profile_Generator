@@ -1,19 +1,19 @@
 const Engineer = require("../lib/Engineer");
 
 test("Can create a github.", () => {
-    const testGithub = "Guru-Darji";
-    const employeeInstance = new Engineer("James", 6, "gurudarji@email.com", testGithub);
-    expect(employeeInstance.github).toBe(testGithub);
+    const checkGithub = "Guru-Darji";
+    const employeeInst = new Engineer("James", 6, "gurudarji@email.com", checkGithub);
+    expect(employeeInst.github).toBe(checkGithub);
 });
 
-test("Testing getGithub will return github.", () => {
-    const testGithub = "Guru-Darji";
-    const employeeInstance = new Engineer("James", 6, "gurudarji@email.com", testGithub);
-    expect(employeeInstance.getGithub()).toBe(testGithub);
+test("checking getGithub will return github.", () => {
+    const checkGithub = "Guru-Darji";
+    const employeeInst = new Engineer("James", 6, "gurudarji@email.com", checkGithub);
+    expect(employeeInst.getGithub()).toBe(checkGithub);
 });
 
-test("Testing role.", () => {
+test("checking role.", () => {
     const returnValue = "Engineer";
-    const employeeInstance = new Engineer("James", 6, "gurudarji@email.com", "Guru-Darji");
-    expect(employeeInstance.getRole()).toBe(returnValue);
+    const employeeInst = new Engineer("James", 6, "gurudarji@email.com", "Guru-Darji");
+    expect(employeeInst.getRole()).toBe(returnValue);
 });
